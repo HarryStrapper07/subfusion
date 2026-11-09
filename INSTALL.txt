@@ -1,0 +1,28 @@
+SUBFUSION - QUICK INSTALLATION
+===============================
+
+1. Install Python 3.8+.
+2. Install the Python dependency:
+
+   python3 -m pip install -r requirements.txt
+
+3. Install Subfinder:
+
+   go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+
+   Add ~/go/bin to PATH if required.
+
+4. Install Sublist3r:
+
+   git clone https://github.com/aboul3la/Sublist3r.git
+   python3 -m pip install -r Sublist3r/requirements.txt
+
+5. Run:
+
+   python3 subfusion.py -d example.com -o results
+
+6. To also check DNS resolution:
+
+   python3 subfusion.py -d example.com -o results --resolve
+
+Replace example.com with a domain you own or are authorized to test.

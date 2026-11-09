@@ -1,0 +1,3 @@
+# Colorama adds colored terminal output.
+# The script has a fallback and can run without this package.
+colorama>=0.4.6
